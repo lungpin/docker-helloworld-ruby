@@ -8,10 +8,10 @@ vendor:
 	bundle pack --all
 
 docker-build:
-	docker build -t leighmcculloch/helloworld-ruby .
+	sudo docker build -t lungpin/sinatra .
 
 docker-run:
-	docker run -it -p 8080:8080 leighmcculloch/helloworld-ruby
+	sudo docker run -it -p 8080:8080 lungpin/sinatra
 
 docker-push:
-	docker push leighmcculloch/helloworld-ruby
+	docker push lungpin/sinatra
