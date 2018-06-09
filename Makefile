@@ -7,6 +7,8 @@ setup:
 vendor:
 	bundle pack --all
 
+build: docker-build
+
 docker-build:
 	sudo docker build -t lungpin/sinatra .
 
